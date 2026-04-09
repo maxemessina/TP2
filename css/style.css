@@ -42,8 +42,11 @@ h1{
   color:rgb(191, 0, 255) ;
   text-transform: uppercase;
 }
-p,h2,h3,h4{
-  color: aliceblue;
+h2,h3,h4{
+color: rgb(248, 0, 227) ;; ; ;
+}
+p{
+  color: rgb(248, 0, 227) ;;
 }
 header{
   display: grid;
@@ -54,7 +57,7 @@ header{
   height: auto;
 }
 header h1{
-  color:rgb(191, 0, 255) ;
+  color:rgb(182, 0, 248) ;
   text-shadow: 2px 2px 20px hsl(250, 100%, 50%);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 250%;
@@ -76,12 +79,12 @@ header h1{
   grid-column: 1/-1;
   grid-template-columns: repeat(3,1fr);
   justify-items: center;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .Header_Menu a{
   font-size: 20px;
   margin-bottom: 0;
-  color:rgb(191, 0, 255) ;
+  color:rgb(182, 0, 248);
   box-shadow: 0 0 10px hsl(308, 100%, 31%);
   background-color: rgba(42, 35, 126, 0.79);
   text-transform: uppercase;
@@ -93,5 +96,42 @@ header h1{
   padding: 8px 14px;
   border-radius: 8px; /*Redondedo el menu del header*/
 }
+
+section h1{
+  margin-top: 10%;
+}
+.Estrenos{
+  max-width:900px;
+  margin:auto;
+}
+
+.Cartas{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 60px;
+  row-gap: 290px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9%;
+  
+}
+.Carta img{
+  width: 100%;
+  max-width: 250px;
+}
+.Carta{
+  align-items: center;
+  text-align: center;
+}
+
+footer{
+  background-color: #000000;
+  text-align: center;
+  padding:20px;
+}
+footer p{
+  color: white
+}
+
 
 
