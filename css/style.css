@@ -32,7 +32,7 @@
   --color-texto-suave: #b3b3b3;
 }*/
 
-/*Css detalle.html*/
+/*Css DETALLE.HTML*/
 body{
   margin:0;
   background-color:#141414;
@@ -48,6 +48,7 @@ color: rgb(248, 0, 227) ;; ; ;
 p{
   color: rgb(248, 0, 227) ;;
 }
+/*HEADER DETALLE.HTML*/
 header{
   display: grid;
   background-color:#000000;
@@ -84,6 +85,7 @@ header h1{
 .Header_Menu a:hover{
   color:rgb(255, 0, 234);
 }
+/*estilando los a del nav del header*/
 .Header_Menu a{
   font-size: 20px;
   margin-bottom: 0;
@@ -100,6 +102,7 @@ header h1{
   border-radius: 8px; /*Redondedo el menu del header*/
 }
 
+/*estilando la section de DETALLE.HTML*/
 section h1{
   margin-top: 10%;
 }
@@ -107,7 +110,7 @@ section h1{
   max-width:900px;
   margin:auto;
 }
-
+/*estilando las cartas con grid, haciendo que quede una "lista" de estreno ordenada en DETALLE.HTML*/
 .Cartas{
   display: grid;
   grid-template-columns: repeat(2,1fr);
