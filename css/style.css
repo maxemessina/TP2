@@ -112,10 +112,11 @@ section h1{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 60px;
-  row-gap: 290px;
+  row-gap: 250px;
+  column-gap: 29%;
   align-items: center;
   justify-content: center;
-  margin-top: 9%;
+  margin-top: 20%;
   
 }
 .Carta img{
@@ -125,6 +126,10 @@ section h1{
 .Carta{
   align-items: center;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 10px hsl(308, 100%, 31%);
+  padding: 20px;
 }
 
 footer{
