@@ -31,3 +31,67 @@
   --color-texto: #ffffff;
   --color-texto-suave: #b3b3b3;
 }*/
+
+/*Css detalle.html*/
+body{
+  margin:0;
+  background-color:#141414;
+}
+h1{
+  text-align: center;
+  color:rgb(191, 0, 255) ;
+  text-transform: uppercase;
+}
+p,h2,h3,h4{
+  color: aliceblue;
+}
+header{
+  display: grid;
+  background-color:#000000;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto 40px;
+  align-items: center;
+  height: auto;
+}
+header h1{
+  color:rgb(191, 0, 255) ;
+  text-shadow: 2px 2px 20px hsl(250, 100%, 50%);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 250%;
+  text-align: center;
+  grid-column: 2;
+  
+}
+.Header_Image{  
+  height: 115px;
+  width: 115px;
+  grid-column: 1;
+  grid-row: 1/2;
+  justify-self:start;
+  align-self:start;
+  gap: 20px;
+}
+.Header_Menu{ /*Divido el menu en 3 y hago q cada item este alineada al centro*/
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  margin-bottom: 0;
+}
+.Header_Menu a{
+  font-size: 20px;
+  margin-bottom: 0;
+  color:rgb(191, 0, 255) ;
+  box-shadow: 0 0 10px hsl(308, 100%, 31%);
+  background-color: rgba(42, 35, 126, 0.79);
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 15px ;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-weight: bold; 
+  padding: 8px 14px;
+  border-radius: 8px; /*Redondedo el menu del header*/
+}
+
+
