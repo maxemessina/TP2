@@ -1,0 +1,7 @@
+.card-horizontal {
+  display: flex;
+  gap: auto;
+  background-color: var(--color-superficie);
+  padding: 16px;
+  border-radius: 8px;
+}

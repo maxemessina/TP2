@@ -1,0 +1,7 @@
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-superficie);
+  padding: 16px;
+  border-radius: 8px;
+}
