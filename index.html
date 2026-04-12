@@ -10,16 +10,16 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div>
         <h1>Cine Aurora</h1>
         <img src="./assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
       <div>
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="./pages/estrenos.html">Próximos estrenos</a>
-          <a href="./pages/login.html">Mi perfil</a>
+        <nav class="nav">
+          <a class="nav__link" href="#">Inicio</a>
+          <a class="nav__link" href="./pages/estrenos.html">Próximos estrenos</a>
+          <a class="nav__link" href="./pages/login.html">Mi perfil</a>
         </nav>
       </div>
     </header>
@@ -28,13 +28,13 @@
       <section>
         <h2>Películas en cartelera</h2>
 
-        <div>
-          <div>
+        <div class="container">
+          <div class="card-vertical">
             <img src="./assets/img/poster-1.png" alt="" />
             <h3>Nombre película</h3>
             <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -43,26 +43,12 @@
           >
           </div>
 
-          <div>
+          <div class="card-vertical">
             <img src="./assets/img/poster-1.png" alt="" />
             <h3>Nombre película</h3>
             <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>ref="pages/pelicula.html">Ver más</a>
-
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -71,12 +57,12 @@
           >
           </div>
 
-          <div>
+          <div class="card-vertical">
             <img src="./assets/img/poster-1.png" alt="" />
             <h3>Nombre película</h3>
             <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -85,12 +71,12 @@
           >
           </div>
 
-          <div>
+          <div class="card-vertical">
             <img src="./assets/img/poster-1.png" alt="" />
             <h3>Nombre película</h3>
             <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -99,12 +85,26 @@
           >
           </div>
 
-          <div>
+          <div class="card-vertical">
             <img src="./assets/img/poster-1.png" alt="" />
             <h3>Nombre película</h3>
             <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
+            href="#"
+            onclick="
+              alert('Lo sentimos, en este momento no funciona nuestro sistema')
+            "
+            >Comprar entradas</a
+          >
+          </div>
+
+          <div class="card-vertical">
+            <img src="./assets/img/poster-1.png" alt="" />
+            <h3>Nombre película</h3>
+            <p>Género</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -116,7 +116,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class ="footer">
       <p> &copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>

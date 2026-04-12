@@ -1,13 +1,18 @@
 .button {
+  text-decoration: none; /* Saca el subrayado */
+  display: inline-block;
+  text-align: center;
   background-color: var(--color-primario);
-  color: rgb(255, 255, 255);
+  color: var(--color-fondo);
   border: none;
-  padding: 10px 16px;
+  padding: 8px 16px;
   cursor: pointer;
   border-radius: 6px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--color-secundario);
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  transform: scale(1.05);
 }

@@ -5,146 +5,47 @@
 @import url(./components/footer.css);
 @import url(./components/grids.css);
 @import url(./components/poster.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Pacifico&display=swap');
 
 
 :root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
+  --color-fondo: #dbcec6;
+  --color-superficie: #ccbcb3;
+  --color-primario: #85191d;
+  --color-secundario: #161a1d;
+  --color-texto: #161a1d;
+  --color-texto-suave: #660708;
+  --fuente-aurora: 'Pacifico', cursive;
+  --fuente-titulos: 'Bebas Neue', sans-serif;
+  --fuente-cuerpo: 'Montserrat', sans-serif;
 }
 
 body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
-  font-family: Arial, sans-serif;
+  font-family: var(--fuente-cuerpo);
   margin: 0;
 }
 
-/* Paleta 3: */
-/*:root {
-  --color-fondo: #141414;
-  --color-superficie: #1f1f1f;
-  --color-primario: #e50914;
-  --color-secundario: #00b4d8;
-  --color-texto: #ffffff;
-  --color-texto-suave: #b3b3b3;
-}*/
-
-/*Css DETALLE.HTML*/
-body{
-  margin:0;
-  background-color:#141414;
+.header h1 {
+  font-family: var(--fuente-aurora);
+  text-transform: none;
+  font-size: 3.5rem;
+  color: var(--color-fondo);
+  text-shadow: 3px 3px 0px var(--color-secundario);
 }
-h1{
+
+h1, h2, h3, h4{
   text-align: center;
-  color:rgb(191, 0, 255) ;
+  font-family: var(--fuente-titulos);
   text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-primario);
 }
-h2,h3,h4{
-color: rgb(248, 0, 227) ;; ; ;
-}
-p{
-  color: rgb(248, 0, 227) ;;
-}
-/*HEADER DETALLE.HTML*/
-header{
-  display: grid;
-  background-color:#000000;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto 40px;
-  align-items: center;
-  height: auto;
-}
-header h1{
-  color:rgb(182, 0, 248) ;
-  text-shadow: 2px 2px 20px hsl(250, 100%, 50%);
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 250%;
+
+.footer {
   text-align: center;
-  grid-column: 2;
-  
+  font-family: var(--fuente-cuerpo);
+  color: var(--color-primario);
 }
-.Header_Image{  
-  height: 115px;
-  width: 115px;
-  grid-column: 1;
-  grid-row: 1/2;
-  justify-self:start;
-  align-self:start;
-  gap: 20px;
-}
-.Header_Menu{ /*Divido el menu en 3 y hago q cada item este alineada al centro*/
-  display: grid;
-  grid-column: 1/-1;
-  grid-template-columns: repeat(3,1fr);
-  justify-items: center;
-  margin-bottom: 10px;
-}
-.Header_Menu a:hover{
-  color:rgb(255, 0, 234);
-}
-/*estilando los a del nav del header*/
-.Header_Menu a{
-  font-size: 20px;
-  margin-bottom: 0;
-  color:rgb(182, 0, 248);
-  box-shadow: 0 0 10px hsl(308, 100%, 31%);
-  background-color: rgba(42, 35, 126, 0.79);
-  text-transform: uppercase;
-  padding: 5px;
-  margin: 15px ;
-  margin-bottom: 25px;
-  text-decoration: none;
-  font-weight: bold; 
-  padding: 8px 14px;
-  border-radius: 8px; /*Redondedo el menu del header*/
-}
-
-/*estilando la section de DETALLE.HTML*/
-section h1{
-  margin-top: 10%;
-}
-.Estrenos{
-  max-width:900px;
-  margin:auto;
-}
-/*estilando las cartas con grid, haciendo que quede una "lista" de estreno ordenada en DETALLE.HTML*/
-.Cartas{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 60px;
-  row-gap: 250px;
-  column-gap: 29%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20%;
-  
-}
-.Carta img{
-  width: 100%;
-  max-width: 250px;
-}
-.Carta{
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 0 10px hsl(308, 100%, 31%);
-  padding: 20px;
-}
-
-footer{
-  background-color: #000000;
-  text-align: center;
-  padding:20px;
-  margin-top: 80px;
-}
-footer p{
-  color: white
-}
-
-
-
