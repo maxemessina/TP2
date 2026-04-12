@@ -31,3 +31,11 @@
   --color-texto: #ffffff;
   --color-texto-suave: #b3b3b3;
 }*/
+
+
+/*CSS de sección Detalle*/
+
+.detalle {
+  max-width: 900px;
+  margin:  0 auto;
+}
