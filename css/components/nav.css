@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: var(--color-superficie);
+  background-color: var(--color-primario);
 }
 
 .nav {
@@ -13,10 +13,12 @@
 
 .nav a {
   text-decoration: none;
-  color: var(--color-texto);
+  color: var(--color-fondo);
+  font-family: var(--fuente-cuerpo);
   transition: 0.3s;
+  font-size: 1.2rem;
 }
 
 .nav a:hover {
-  color: var(--color-primario);
+  color: var(--color-secundario);
 }
