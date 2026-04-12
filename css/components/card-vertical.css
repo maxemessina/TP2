@@ -5,3 +5,8 @@
   padding: 16px;
   border-radius: 8px;
 }
+
+.card-vertical .button {
+  margin-top: 8px; /* Los separa un poquito entre ellos (regla de los 4px) */
+  display: block;  /* Hace que ocupen todo el ancho disponible de la card */
+}
