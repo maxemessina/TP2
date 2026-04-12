@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+}
