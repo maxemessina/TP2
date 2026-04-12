@@ -5,20 +5,47 @@
 @import url(./components/footer.css);
 @import url(./components/grids.css);
 @import url(./components/poster.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Pacifico&display=swap');
 
 
 :root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
+  --color-fondo: #dbcec6;
+  --color-superficie: #ccbcb3;
+  --color-primario: #a4161a;
+  --color-secundario: #161a1d;
+  --color-texto: #161a1d;
+  --color-texto-suave: #660708;
+  --fuente-aurora: 'Pacifico', cursive;
+  --fuente-titulos: 'Bebas Neue', sans-serif;
+  --fuente-cuerpo: 'Montserrat', sans-serif;
 }
 
 body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
-  font-family: Arial, sans-serif;
+  font-family: var(--fuente-cuerpo);
   margin: 0;
+}
+
+.header h1 {
+  font-family: var(--fuente-aurora);
+  text-transform: none;
+  font-size: 3.5rem;
+  color: var(--color-fondo);
+  text-shadow: 3px 3px 0px var(--color-secundario);
+}
+
+h1, h2, h3, h4{
+  text-align: center;
+  font-family: var(--fuente-titulos);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-primario);
+}
+
+.footer {
+  text-align: center;
+  font-family: var(--fuente-cuerpo);
+  color: var(--color-primario);
 }
