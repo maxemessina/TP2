@@ -1,4 +1,7 @@
 .button {
+  text-decoration: none; /* Saca el subrayado */
+  display: inline-block;
+  text-align: center;
   background-color: var(--color-primario);
   color: rgb(255, 255, 255);
   border: none;
