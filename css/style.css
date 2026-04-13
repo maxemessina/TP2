@@ -5,9 +5,7 @@
 @import url(./components/footer.css);
 @import url(./components/grids.css);
 @import url(./components/poster.css);
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&family=Pacifico&display=swap');
 
 :root {
   --color-fondo: #dbcec6;
@@ -41,11 +39,5 @@ h1, h2, h3, h4{
   font-family: var(--fuente-titulos);
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--color-primario);
-}
-
-.footer {
-  text-align: center;
-  font-family: var(--fuente-cuerpo);
   color: var(--color-primario);
 }
