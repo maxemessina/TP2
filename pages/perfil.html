@@ -10,54 +10,68 @@
   </head>
 
   <body>
-    <header>
-      <div>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-logo">
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
-        </nav>
-      </div>
+
+      <nav class="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="./estrenos.html">Próximos estrenos</a>
+        <a href="../index.html">Volver</a>
+      </nav>
     </header>
 
-    <main>
+    <!-- MAIN -->
+    <main class="perfil">
       <h1>Panel de usuario</h1>
-      <section>
-        <div>
+
+      <!-- USUARIO -->
+      <section class="perfil-usuario">
+        <div class="perfil-info">
           <img
             src="../assets/img/perfil-placeholder.png"
             alt="Foto de perfil"
           />
-          <h2>Hola, John Doe 👋📽️!</h2>
+          <h2>Hola, Valen Guerri 👋📽️!</h2>
         </div>
-        <div>
-          <p>Nombre completo: John Doe</p>
-          <p>Email: usuario@example.com</p>
-          <p>Fecha de nacimiento: dd/mm/yyyy</p>
+
+        <div class="perfil-datos">
+          <p>Nombre completo: Valentina Guerrieri</p>
+          <p>Email: valeguerri@gmail.com</p>
+          <p>Fecha de nacimiento: 02/05/2001</p>
           <p>Contraseña: ********</p>
           <p>Miembro desde: 2026</p>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>Películas ya vistas</h3>
+
+      <!-- PELÍCULAS -->
+      <section class="perfil-peliculas">
+        <h3>Películas ya vistas</h3>
+
+        <div class="container">
+          <div class="card-vertical">
+            <p>🎬 Estreno A</p>
+            <span>Vista el 10/03</span>
           </div>
-          <div>
-            <ul>
-              <li>🎬 Estreno A - Vista el 10/03</li>
-              <li>🎬 Estreno B - Vista el 15/03</li>
-            </ul>
+
+          <div class="card-vertical">
+            <p>🎬 Estreno B</p>
+            <span>Vista el 15/03</span>
+          </div>
+
+          <div class="card-vertical">
+            <p>🎬 Estreno C</p>
+            <span>Vista el 20/03</span>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
       <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
