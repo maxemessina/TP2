@@ -41,3 +41,53 @@ h1, h2, h3, h4{
   letter-spacing: 2px;
   color: var(--color-primario);
 }
+
+.detalle__layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start; /* CLAVE */
+}
+
+/* IZQUIERDA */
+.detalle__col-izq {
+  width: 260px;
+}
+
+.detalle__col-izq img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.detalle__lista {
+  list-style: none;
+  padding: 0;
+}
+
+.detalle__lista li {
+  margin-bottom: 6px;
+}
+
+.detalle__horarios-titulo {
+  margin-top: 15px;
+}
+
+.detalle__col-der h3{
+  text-align: left;
+  flex: 1;
+  font-size: 20px;
+}
+.sinopsis {
+  line-height: 1.8;
+}
+
+.detalle__col-der h1 {
+  color: #85191d;
+  text-align: left;
+  flex: 1;
+  font-size: 40px;
+}
+
+.detalle__rating {
+  margin: 20px 0;
+}

@@ -8,80 +8,66 @@
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
+
   <body>
-    <header>
+    <!-- Header reutilizado -->
+    <header class="header">
       <div>
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
       <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
+        <nav class="nav">
+          <a class="nav__link" href="../index.html">Inicio</a>
+          <a class="nav__link" href="./estrenos.html">Próximos estrenos</a>
+          <a class="nav__link" href="./login.html">Mi perfil</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section>
-        <div>
-          <img src="../assets/img/poster-1.png" alt="Póster" />
-        </div>
-        <div>
-          <div>
-            <h1>Título</h1>
-            <h2>Lorem ipsum, dolor sit.</h2>
-          </div>
-          <div>
-            <h3>Sinopsis</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              ullam ipsum corporis quidem, assumenda magni officia recusandae.
-              Tenetur voluptatem architecto, dolores eius, deleniti quam
-              voluptatibus laboriosam ut recusandae animi quisquam!
-            </p>
-          </div>
-          <div>
-            <h3>Duración</h3>
-            <p>155 minutos</p>
-          </div>
+  <div class="container">
 
-          <div>
-            <h3>Género</h3>
-            <p>Ciencia ficción</p>
-          </div>
+    <div class="detalle__layout">
 
-          <div>
-            <h3>Director</h3>
-            <p>John Doe</p>
-          </div>
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="detalle__col-izq">
+        <img src="../assets/img/back_to_the_future.jpg" alt="Póster" />
 
-          <div>
-            <h3>Clasificación</h3>
-            <p>+13</p>
-          </div>
-          <div>
-            <h3>Horarios:</h3>
-            <p>16:00</p>
-            <p>19:00</p>
-            <p>22:00</p>
-          </div>
-          <div>
-            <p>Puntuación: ★★★★☆</p>
-          </div>
-          <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-        </div>
-      </section>
+        <ul class="detalle__lista">
+        <li><strong>Duración:</strong> 116 minutos</li>
+        <li><strong>Género:</strong> Ciencia ficción</li>
+        <li><strong>Director:</strong> Robert Zemeckis </li>
+        <li><strong>Clasificación:</strong> +13</li>
+        
+        <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+        <li>16:00</li>
+        <li>19:00</li>
+        <li>22:00</li>
+        <p class="detalle__rating"><strong>Puntuación: </strong>★★★★☆</p>
+
+        <a class="button" href="#">Comprar entradas</a>
+      </ul>
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="detalle__col-der">
+        <h1 style="font-size: 40px;" id="Volver al futuro">BACK TO THE FUTURE</h1>
+        <h3 style="font-size: 30px;">Sinopsis</h3>
+        <p class = "sinopsis" >
+          En la década de 1980, un experimento de un científico excéntrico resulta ser defectuoso.<br>
+          Esto lleva a su amigo adolescente a viajar en el tiempo a la década de 1950,<br>
+          donde se ve obligado a reunir a la versión joven de sus padres..
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
     </main>
 
-    <footer>
+    <!-- Footer reutilizado -->
+    <footer class="footer">
       <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
