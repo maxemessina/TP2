@@ -10,31 +10,31 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div>
         <h1>Cine Aurora</h1>
         <img src="./assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
       <div>
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="./pages/estrenos.html">Próximos estrenos</a>
-          <a href="./pages/login.html">Mi perfil</a>
+        <nav class="nav">
+          <a class="nav__link" href="#">Inicio</a>
+          <a class="nav__link" href="./pages/estrenos.html">Próximos estrenos</a>
+          <a class="nav__link" href="./pages/login.html">Mi perfil</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section>
-        <h2>Películas en cartelera</h2>
+        <h1>Películas en cartelera</h1>
 
-        <div>
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+        <div class="container">
+          <div class="card-vertical">
+            <img src="./assets/img/back_to_the_future.jpg" alt="Back to the Future (1985)" />
+            <h3>Back to the Future</h3>
+            <p>Ciencia Ficción</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -43,26 +43,12 @@
           >
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>ref="pages/pelicula.html">Ver más</a>
-
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+          <div class="card-vertical">
+            <img src="./assets/img/alien.jpg" alt="Alien (1979)" />
+            <h3>Alien</h3>
+            <p>Ciencia Ficción</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -71,12 +57,12 @@
           >
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+          <div class="card-vertical">
+            <img src="./assets/img/godfather.jpg" alt="Godfather (1972)" />
+            <h3>The Godfather</h3>
+            <p>Crimen</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -85,12 +71,12 @@
           >
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+          <div class="card-vertical">
+            <img src="./assets/img/raiders_of_the_lost_ark.jpg" alt="Raiders of the Lost Ark (1981)" />
+            <h3>Raiders of the Lost Ark</h3>
+            <p>Aventura</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -99,12 +85,26 @@
           >
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
+          <div class="card-vertical">
+            <img src="./assets/img/jurassic_park.jpg" alt="Jurassic Park (1993)" />
+            <h3>Jurassic Park</h3>
+            <p>Aventura / Ciencia Ficción</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
+            href="#"
+            onclick="
+              alert('Lo sentimos, en este momento no funciona nuestro sistema')
+            "
+            >Comprar entradas</a
+          >
+          </div>
+
+          <div class="card-vertical">
+            <img src="./assets/img/shining.jpg" alt="The Shining (1980)" />
+            <h3>The Shining</h3>
+            <p>Terror</p>
+            <a class="button" href="./pages/detalle.html">Ver más</a>
+            <a class="button"
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
@@ -116,7 +116,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class ="footer">
       <p> &copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
