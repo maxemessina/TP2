@@ -10,36 +10,39 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div>
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
       <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="./estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
+        <nav class="nav">
+          <a class="nav__link" href="../index.html">Inicio</a>
+          <a class="nav__link" href="./estrenos.html">Próximos estrenos</a>
+          <a class="nav__link" href="../index.html">Volver</a>
         </nav>
       </div>
     </header>
+
     <main>
-      <form action="perfil.html">
-        <h2>Acceso Clientes</h2>
-        <div>
-          <label>Email</label>
-          <input type="email" required />
-        </div>
-        <div>
-          <label>Contraseña</label>
-          <input type="password" required />
-        </div>
-        <button type="submit">Ingresar</button>
-        <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
-      </form>
+      <div class="form-container">
+        <form action="perfil.html">
+          <h2>Acceso Clientes</h2>
+          <div>
+            <label>Email</label>
+            <input type="email" required />
+          </div>
+          <div>
+            <label>Contraseña</label>
+            <input type="password" required />
+          </div>
+          <button class="button" type="submit">Ingresar</button>
+          <p>¿No eres miembro? <a href="registro.html">Regístrate</a></p>
+        </form>
+      </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>

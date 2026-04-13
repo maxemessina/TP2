@@ -16,3 +16,8 @@
   border-color: var(--color-primario);
   transform: scale(1.05);
 }
+
+input:focus {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 2px;
+}
