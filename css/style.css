@@ -55,12 +55,14 @@ h1, h2, h3, h4{
 /* IZQUIERDA */
 .detalle__col-izq {
   width: 260px;
+  flex-shrink: 0;
 }
 
 .detalle__col-izq img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+  width: 70%;
+  height: 250px;
+  object-fit: cover;  
+  display: block;
 }
 
 .detalle__lista {
