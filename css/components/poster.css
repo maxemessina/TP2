@@ -4,3 +4,11 @@ img {
   width: 100px;
   height: 100px;
 }
+
+.card-vertical img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3; /* Proporción clásica de póster de cine */
+  object-fit: cover;
+  border-radius: 4px; 
+}

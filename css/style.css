@@ -1,33 +1,100 @@
-@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url(./components/nav.css);
+@import url(./components/button.css);
+@import url(./components/card-horizontal.css);
+@import url(./components/card-vertical.css);
+@import url(./components/footer.css);
+@import url(./components/grids.css);
+@import url(./components/poster.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&family=Pacifico&display=swap');
 
-/* Paletas de colores que pueden usar: */
+:root {
+  --color-fondo: #dbcec6;
+  --color-superficie: #ccbcb3;
+  --color-primario: #85191d;
+  --color-secundario: #161a1d;
+  --color-texto: #161a1d;
+  --color-texto-suave: #660708;
+  --fuente-aurora: 'Pacifico', cursive;
+  --fuente-titulos: 'Bebas Neue', sans-serif;
+  --fuente-cuerpo: 'Montserrat', sans-serif;
+}
 
-/* Paleta 1: */
-/*:root {
-  --color-fondo: #0f172a;
-  --color-superficie: #1e293b;
-  --color-primario: #e11d48;
-  --color-secundario: #f59e0b;
-  --color-texto: #f8fafc;
-  --color-texto-suave: #94a3b8;
-}*/
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-cuerpo);
+  margin: 0;
+}
 
-/* Paleta 2: */
-/*:root {
-  --color-fondo: #fff8e7;
-  --color-superficie: #ffe8a3;
-  --color-primario: #e63946;
-  --color-secundario: #ffb703;
-  --color-texto: #1d3557;
-  --color-texto-suave: #457b9d;
-}*/
+.header h1 {
+  font-family: var(--fuente-aurora);
+  text-transform: none;
+  font-size: 3.5rem;
+  color: var(--color-fondo);
+  text-shadow: 3px 3px 0px var(--color-secundario);
+}
 
-/* Paleta 3: */
-/*:root {
-  --color-fondo: #141414;
-  --color-superficie: #1f1f1f;
-  --color-primario: #e50914;
-  --color-secundario: #00b4d8;
-  --color-texto: #ffffff;
-  --color-texto-suave: #b3b3b3;
-}*/
+.detalle {
+  max-width: 900px;
+  margin:  0 auto;
+}
+h1, h2, h3, h4{
+  text-align: center;
+  font-family: var(--fuente-titulos);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-primario);
+}
+
+.detalle__layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start; /* CLAVE */
+}
+
+/* IZQUIERDA */
+.detalle__col-izq {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.detalle__col-izq img {
+  width: 70%;
+  height: 250px;
+  object-fit: cover;  
+  display: block;
+}
+
+.detalle__lista {
+  list-style: none;
+  padding: 0;
+}
+
+.detalle__lista li {
+  margin-bottom: 6px;
+}
+
+.detalle__horarios-titulo {
+  margin-top: 15px;
+}
+
+.detalle__col-der h3{
+  text-align: left;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.sinopsis {
+  line-height: 1.8;
+}
+
+.detalle__col-der h1 {
+  color: #85191d;
+  text-align: left;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.detalle__rating {
+  margin: 20px 0;
+}
