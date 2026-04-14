@@ -79,8 +79,9 @@ h1, h2, h3, h4{
 .detalle__col-der h3{
   text-align: left;
   flex: 1;
-  font-size: 20px;
+  margin-top: 20px;
 }
+
 .sinopsis {
   line-height: 1.8;
 }
@@ -88,8 +89,8 @@ h1, h2, h3, h4{
 .detalle__col-der h1 {
   color: #85191d;
   text-align: left;
-  flex: 1;
   font-size: 40px;
+  margin-top: 0;
 }
 
 .detalle__rating {
