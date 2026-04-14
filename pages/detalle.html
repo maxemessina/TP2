@@ -8,80 +8,254 @@
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
+
   <body>
-    <header>
+    <!-- Header reutilizado -->
+    <header class="header">
       <div>
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
       <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
+        <nav class="nav">
+          <a class="nav__link" href="../index.html">Inicio</a>
+          <a class="nav__link" href="./estrenos.html">Próximos estrenos</a>
+          <a class="nav__link" href="./login.html">Mi perfil</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section>
-        <div>
-          <img src="../assets/img/poster-1.png" alt="Póster" />
+      <section class= "detalle">
+    
+  <div class="container">
+    <div class="detalle__layout">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="detalle__col-izq">
+        <img  src="../assets/img/back_to_the_future.jpg" alt="Póster" />
+
+        <ul class="detalle__lista">
+        <li><strong>Duración:</strong> 116 minutos</li>
+        <li><strong>Género:</strong> Ciencia ficción</li>
+        <li><strong>Director:</strong> Robert Zemeckis </li>
+        <li><strong>Clasificación:</strong> +13</li>
+        
+        <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+        <li>16:00</li>
+        <li>19:00</li>
+        <li>22:00</li>
+        <li class="detalle__rating"> <strong>Puntuación:</strong> ★★★★☆ </li>
+
+        <a class="button" href="#">Comprar entradas</a>
+      </ul>
+      </div>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="detalle__col-der">
+        <h1 style="font-size: 40px;" id="volver-al-futuro">BACK TO THE FUTURE</h1>
+        <h3 style="font-size: 30px;">Sinopsis</h3>
+        <p class = "sinopsis" >
+          En la década de 1980, un experimento de un científico excéntrico resulta ser defectuoso.<br>
+          Esto lleva a su amigo adolescente a viajar en el tiempo a la década de 1950, <br>
+          donde se ve obligado a reunir a la versión joven de sus padres..
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ALIEN -->
+      <section class="detalle" id="alien">
+        <div class="container">
+          <div class="detalle__layout">
+
+            <div class="detalle__col-izq">
+              <img src="../assets/img/alien.jpg" alt="Alien" />
+
+              <ul class="detalle__lista">
+                <li><strong>Duración:</strong> 117 minutos</li>
+                <li><strong>Género:</strong> Ciencia ficción / Terror</li>
+                <li><strong>Director:</strong> Ridley Scott</li>
+                <li><strong>Clasificación:</strong> +16</li>
+
+                <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+                <li>18:00</li>
+                <li>21:00</li>
+
+                <li class="detalle__rating"><strong>Puntuación:</strong> ★★★★☆</li>
+
+                <a class="button" href="#">Comprar entradas</a>
+              </ul>
+            </div>
+
+            <div class="detalle__col-der">
+              <h1>ALIEN</h1>
+              <h3>Sinopsis</h3>
+              <p class="sinopsis">
+                Sigue a la tripulación de la nave de carga Nostromo, que despierta de su hipersueño para investigar una señal de socorro en un planeta desolado.<br>
+                Allí, una forma de vida extraterrestre letal acecha y mata a los tripulantes, obligando a Ripley a luchar por sobrevivir.
+              </p>
+            </div>
+
+          </div>
         </div>
-        <div>
-          <div>
-            <h1>Título</h1>
-            <h2>Lorem ipsum, dolor sit.</h2>
-          </div>
-          <div>
-            <h3>Sinopsis</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              ullam ipsum corporis quidem, assumenda magni officia recusandae.
-              Tenetur voluptatem architecto, dolores eius, deleniti quam
-              voluptatibus laboriosam ut recusandae animi quisquam!
-            </p>
-          </div>
-          <div>
-            <h3>Duración</h3>
-            <p>155 minutos</p>
-          </div>
+      </section>
 
-          <div>
-            <h3>Género</h3>
-            <p>Ciencia ficción</p>
-          </div>
+      <!-- THE GODFATHER -->
+      <section class="detalle" id="the-godfather">
+        <div class="container">
+          <div class="detalle__layout">
 
-          <div>
-            <h3>Director</h3>
-            <p>John Doe</p>
-          </div>
+            <div class="detalle__col-izq">
+              <img src="../assets/img/godfather.jpg" alt="The Godfather" />
 
-          <div>
-            <h3>Clasificación</h3>
-            <p>+13</p>
+              <ul class="detalle__lista">
+                <li><strong>Duración:</strong> 175 minutos</li>
+                <li><strong>Género:</strong> Crimen / Drama</li>
+                <li><strong>Director:</strong> Francis Ford Coppola</li>
+                <li><strong>Clasificación:</strong> +16</li>
+
+                <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+                <li>17:00</li>
+                <li>20:30</li>
+
+                <li class="detalle__rating"><strong>Puntuación:</strong> ★★★★★</li>
+
+                <a class="button" href="#">Comprar entradas</a>
+              </ul>
+            </div>
+
+            <div class="detalle__col-der">
+              <h1>THE GODFATHER</h1>
+              <h3>Sinopsis</h3>
+              <p class="sinopsis">
+                Narra la crónica de la familia mafiosa Corleone en Nueva York, liderada por Don Vito.<br>
+                Cuando Vito se niega a entrar en el tráfico de drogas, sufre un atentado, forzando a su hijo menor, Michael, a involucrarse en los negocios y tomar las riendas del imperio criminal.
+              </p>
+            </div>
+
           </div>
-          <div>
-            <h3>Horarios:</h3>
-            <p>16:00</p>
-            <p>19:00</p>
-            <p>22:00</p>
+        </div>
+      </section>
+
+      <!-- RAIDERS OF THE LOST ARK -->
+      <section class="detalle" id="raiders-of-the-lost-ark">
+        <div class="container">
+          <div class="detalle__layout">
+
+            <div class="detalle__col-izq">
+              <img src="../assets/img/raiders_of_the_lost_ark.jpg" alt="Raiders of the Lost Ark" />
+
+              <ul class="detalle__lista">
+                <li><strong>Duración:</strong> 115 minutos</li>
+                <li><strong>Género:</strong> Aventura</li>
+                <li><strong>Director:</strong> Steven Spielberg</li>
+                <li><strong>Clasificación:</strong> +13</li>
+
+                <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+                <li>16:00</li>
+                <li>19:30</li>
+
+                <li class="detalle__rating"><strong>Puntuación:</strong> ★★★★☆</li>
+
+                <a class="button" href="#">Comprar entradas</a>
+              </ul>
+            </div>
+
+            <div class="detalle__col-der">
+              <h1>RAIDERS OF THE LOST ARK</h1>
+              <h3>Sinopsis</h3>
+              <p class="sinopsis">
+                Indiana Jones es contratado por el gobierno de Estados Unidos para encontrar el Arca de la Alianza antes de que caiga en manos de los nazis, que buscan usar su poder sobrenatural para ganar la guerra.
+                En su misión viaja por distintos países, enfrenta trampas mortales, enemigos peligrosos y antiguos secretos, mientras intenta recuperar el artefacto antes de que sea demasiado tarde..
+              </p>
+            </div>
+
           </div>
-          <div>
-            <p>Puntuación: ★★★★☆</p>
+        </div>
+      </section>
+
+      <!-- JURASSIC PARK -->
+      <section class="detalle" id="jurassic-park">
+        <div class="container">
+          <div class="detalle__layout">
+
+            <div class="detalle__col-izq">
+              <img src="../assets/img/jurassic_park.jpg" alt="Jurassic Park" />
+
+              <ul class="detalle__lista">
+                <li><strong>Duración:</strong> 127 minutos</li>
+                <li><strong>Género:</strong> Ciencia ficción / Aventura</li>
+                <li><strong>Director:</strong> Steven Spielberg</li>
+                <li><strong>Clasificación:</strong> +13</li>
+
+                <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+                <li>18:00</li>
+                <li>21:30</li>
+
+                <li class="detalle__rating"><strong>Puntuación:</strong> ★★★★★</li>
+
+                <a class="button" href="#">Comprar entradas</a>
+              </ul>
+            </div>
+
+            <div class="detalle__col-der">
+              <h1>JURASSIC PARK</h1>
+              <h3>Sinopsis</h3>
+              <p class="sinopsis">
+                Un multimillonario crea un parque temático revolucionario donde los dinosaurios han sido clonados a partir de ADN prehistórico. 
+                Antes de su apertura, invita a un grupo de científicos a visitarlo para validar su seguridad, pero un fallo en los sistemas de control provoca que las criaturas se liberen. 
+                A partir de ahí, el parque se convierte en un lugar de supervivencia donde los visitantes deben escapar mientras los dinosaurios dominan el entorno..
+              </p>
+            </div>
+
           </div>
-          <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+        </div>
+      </section>
+
+      <!-- THE SHINING -->
+      <section class="detalle" id="the-shining">
+        <div class="container">
+          <div class="detalle__layout">
+
+            <div class="detalle__col-izq">
+              <img src="../assets/img/shining.jpg" alt="The Shining" />
+
+              <ul class="detalle__lista">
+                <li><strong>Duración:</strong> 146 minutos</li>
+                <li><strong>Género:</strong> Terror</li>
+                <li><strong>Director:</strong> Stanley Kubrick</li>
+                <li><strong>Clasificación:</strong> +16</li>
+
+                <li class="detalle__horarios-titulo"><strong>Horarios:</strong></li>
+                <li>20:00</li>
+                <li>23:00</li>
+
+                <li class="detalle__rating"><strong>Puntuación:</strong> ★★★★★</li>
+
+                <a class="button" href="#">Comprar entradas</a>
+              </ul>
+            </div>
+
+            <div class="detalle__col-der">
+              <h1>THE SHINING</h1>
+              <h3>Sinopsis</h3>
+              <p class="sinopsis">
+                Un escritor acepta un trabajo como cuidador de un hotel aislado durante el invierno y se muda allí con su familia. 
+                Con el paso del tiempo, la soledad y las extrañas presencias del lugar comienzan a afectar su mente, 
+                llevándolo a perder el control y poniendo en peligro a su esposa e hijo..
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <!-- Footer reutilizado -->
+    <footer class="footer">
       <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
   </body>
